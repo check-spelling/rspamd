@@ -628,7 +628,7 @@ exports.table_cmp = table_cmp
 --]]
 local function table_merge(t1, t2)
   local res = {}
-  local nidx = 1 -- for numeric indicies
+  local nidx = 1 -- for numeric indices
   local it_func = function(k, v)
     if type(k) == 'number' then
       res[nidx] = v
