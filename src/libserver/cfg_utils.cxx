@@ -912,7 +912,7 @@ rspamd_config_post_load(struct rspamd_config *cfg,
 		/* Init re cache */
 		rspamd_re_cache_init(cfg->re_cache, cfg);
 
-		/* Try load Hypersan */
+		/* Try load Hyperscan */
 		auto hs_ret = rspamd_re_cache_load_hyperscan(cfg->re_cache,
 													 cfg->hs_cache_dir ? cfg->hs_cache_dir : RSPAMD_DBDIR "/",
 													 true);
