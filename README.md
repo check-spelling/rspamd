@@ -21,7 +21,7 @@ A good starting point to study how to install and configure Rspamd is [the quick
 
 Rspamd is [packaged](https://rspamd.com/downloads.html) for the major Linux distributions, and is also available via [FreeBSD ports](https://freshports.org/mail/rspamd), NetBSD [pkgsrc](https://pkgsrc.org) and [OpenBSD ports](http://openports.se/mail/rspamd).
 
-We advise to use packages provided by Rspamd project if available for your OS instead of packages that might be provided by some Linux distributions, as they are usually out of date and does not provide the desired spam filtering quality nor supported by Rspamd project.
+We advise to use packages provided by Rspamd project if available for your OS instead of packages that might be provided by some Linux distributions, as they are usually out of date and provide neither the desired spam filtering quality nor are they supported by Rspamd project.
 
 ## Spam filtering features
 

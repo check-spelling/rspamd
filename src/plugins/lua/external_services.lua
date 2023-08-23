@@ -234,7 +234,7 @@ if opts and type(opts) == 'table' then
 
         if type(m.timeout) == 'number' then
           -- Here, we ignore possible DNS timeout and timeout from multiple retries
-          -- as these situations are not usual nor likely for the external_services module
+          -- as these situations are neither usual nor likely for the external_services module
           table.insert(t.augmentations, string.format("timeout=%f", m.timeout))
         end
 
