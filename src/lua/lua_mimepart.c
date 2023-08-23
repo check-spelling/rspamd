@@ -477,7 +477,7 @@ LUA_FUNCTION_DEF(mimepart, get_enclosing_boundary);
 
 /***
  * @method mime_part:get_children()
- * Returns rspamd_mimepart table of part's childer. Returns nil if mime part is not multipart
+ * Returns rspamd_mimepart table of part's children. Returns nil if mime part is not multipart
  * or a message part.
  * @return {rspamd_mimepart} table of children
  */
