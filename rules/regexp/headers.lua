@@ -962,7 +962,7 @@ local old_x_mailers = {
   -- Outlook 2002 (Office XP)
   [[Microsoft Outlook, Build 10\.]],
   -- Some old Apple iOS versions are used on old devices, match only very old
-  -- versions (iOS 4.3.5 buid 8L1 was supported until 2013) and less old
+  -- versions (iOS 4.3.5 build 8L1 was supported until 2013) and less old
   -- versions frequently seen in spam
   [[i(Phone|Pad) Mail \((?:[1-8][A-L]|12H|13E)]],
 }
