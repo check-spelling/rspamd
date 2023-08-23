@@ -175,7 +175,7 @@ void chacha_blocks_ref(chacha_state_internal *state, const unsigned char *in, un
 			U32TO8(out + 60, x[15]);
 		}
 
-		/* increment the 64 bit counter, split in to two 32 bit halves */
+		/* increment the 64 bit counter, split into two 32 bit halves */
 		j[8]++;
 		if (!j[8])
 			j[9]++;
