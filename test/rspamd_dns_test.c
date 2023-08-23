@@ -95,7 +95,7 @@ void rspamd_dns_test_func(void)
 	g_assert(rspamd_dns_resolver_request(resolver, s, pool, test_dns_cb, NULL, RDNS_REQUEST_SRV,
 										 "_xmpp-server._tcp.jabber.org"));
 	requests++;
-	g_assert(rspamd_dns_resolver_request(resolver, s, pool, test_dns_cb, NULL, RDNS_REQUEST_TXT, "non-existent.arpa"));
+	g_assert(rspamd_dns_resolver_request(resolver, s, pool, test_dns_cb, NULL, RDNS_REQUEST_TXT, "nonexistent.arpa"));
 
 	g_assert(resolver != NULL);
 
