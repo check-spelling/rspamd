@@ -332,7 +332,7 @@ public:
 
 
 	/**
-	 * Creates a string with a filter function. It is calee responsibility to
+	 * Creates a string with a filter function. It is callee responsibility to
 	 * ensure that the filter functor survives long enough to work with a string
 	 * @param str
 	 * @param sz
