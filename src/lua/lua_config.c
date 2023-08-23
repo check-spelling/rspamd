@@ -2117,7 +2117,7 @@ lua_config_register_symbol(lua_State *L)
 
 						tok.begin = augmentation;
 						tok.len = eqsign_pos - augmentation;
-						char *augentation_name = rspamd_ftokdup(&tok);
+						char *augmentation_name = rspamd_ftokdup(&tok);
 
 						tok.begin = eqsign_pos + 1;
 						tok.len = (augmentation + len) - tok.begin;
@@ -2125,17 +2125,17 @@ lua_config_register_symbol(lua_State *L)
 						char *augmentation_value = rspamd_ftokdup(&tok);
 
 						if (!rspamd_symcache_add_symbol_augmentation(cfg->cache, ret,
-																	 augentation_name, augmentation_value)) {
+																	 augmentation_name, augmentation_value)) {
 							lua_settop(L, prev_top);
 							g_free(augmentation_value);
-							g_free(augentation_name);
+							g_free(augmentation_name);
 
 							return luaL_error(L, "unknown or invalid augmentation %s in symbol %s",
 											  augmentation, name);
 						}
 
 						g_free(augmentation_value);
-						g_free(augentation_name);
+						g_free(augmentation_name);
 					}
 					else {
 						/* Just a value */
