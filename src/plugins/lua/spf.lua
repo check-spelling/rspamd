@@ -33,7 +33,7 @@ spf {
   spf_cache_expire = 1d;
   # Whitelist IPs from checks
   whitelist = "/path/to/some/file";
-  # Maximum number of recursive DNS subrequests (e.g. includes chanin length)
+  # Maximum number of recursive DNS subrequests (e.g. includes chain length)
   max_dns_nesting = 10;
   # Maximum count of DNS requests per record
   max_dns_requests = 30;
