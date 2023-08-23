@@ -1044,7 +1044,7 @@ void rspamd_lua_close(lua_State *L)
 	struct rspamd_lua_context *ctx = rspamd_lua_ctx_by_state(L);
 
 	/* TODO: we will leak this memory, but I don't know how to resolve
-	 * the chicked-egg problem when lua_close calls GC for many
+	 * the chicken-egg problem when lua_close calls GC for many
 	 * userdata that requires classes metatables to be represented
 	 * For now, it is safe to leave it as is, I'm afraid
 	 */
