@@ -42,7 +42,7 @@ Creating a stemmer is a relatively expensive operation - the expected
 usage pattern is that a new stemmer is created when needed, used
 to stem many words, and deleted after some time.
 
-Stemmers are re-entrant, but not threadsafe.  In other words, if
+Stemmers are reentrant, but not threadsafe.  In other words, if
 you wish to access the same stemmer object from multiple threads,
 you must ensure that all access is protected by a mutex or similar
 device.
