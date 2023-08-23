@@ -49,13 +49,13 @@ LUA_FUNCTION_DEF(util, create_event_base);
 /***
  * @function util.load_rspamd_config(filename)
  * Load rspamd config from the specified file
- * @return {confg} new configuration object suitable for access
+ * @return {config} new configuration object suitable for access
  */
 LUA_FUNCTION_DEF(util, load_rspamd_config);
 /***
  * @function util.config_from_ucl(any, string)
  * Load rspamd config from ucl represented by any lua table
- * @return {confg} new configuration object suitable for access
+ * @return {config} new configuration object suitable for access
  */
 LUA_FUNCTION_DEF(util, config_from_ucl);
 /***
