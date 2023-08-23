@@ -76,7 +76,7 @@ steps:
       - make -j $ncpu rspamd-test
       - make -j $ncpu rspamd-test-cxx
 
-  # We run rspamd-test (unit test) and functional test (runned by robot) in
+  # We run rspamd-test (unit test) and functional test (run by robot) in
   # parallel to save time. To avoid conflict in saving lua coverage we run them
   # from different directories. For C code coverage counters is saved to .gcda
   # files and binary contain absolute path to them, so rspamd-test and
