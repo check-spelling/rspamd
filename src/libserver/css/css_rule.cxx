@@ -43,7 +43,7 @@ void css_rule::override_values(const css_rule &other)
 			 * The algorithm is not very efficient,
 			 * so we need to sort the values first and have a O(N) algorithm
 			 * On the other hand, values vectors are usually limited to the
-			 * number of elements about less then 10, so this O(N^2) algorithm
+			 * number of elements about less than 10, so this O(N^2) algorithm
 			 * is probably ok here
 			 */
 			for (auto &v: values) {
