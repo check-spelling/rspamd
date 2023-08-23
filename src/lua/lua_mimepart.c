@@ -73,7 +73,7 @@ LUA_FUNCTION_DEF(textpart, has_8bit);
  * Get the text of the part (html tags stripped). Optional `type` defines type of content to get:
  * - `content` (default): utf8 content with HTML tags stripped and newlines preserved
  * - `content_oneline`: utf8 content with HTML tags and newlines stripped
- * - `raw`: raw content, not mime decoded nor utf8 converted
+ * - `raw`: raw content, neither mime decoded nor utf8 converted
  * - `raw_parsed`: raw content, mime decoded, not utf8 converted
  * - `raw_utf`: raw content, mime decoded, utf8 converted (but with HTML tags and newlines)
  * @return {text} `UTF8` encoded content of the part (zero-copy if not converted to a lua string)
