@@ -723,7 +723,7 @@ auto get_selectors_parser_functor(rspamd_mempool_t *pool,
 	auto last = children.end();
 
 	/*
-	 * We use move only wrapper to state the fact that the cosumed blocks
+	 * We use move only wrapper to state the fact that the consumed blocks
 	 * are moved into the closure, not copied.
 	 * It prevents us from thinking about copies of the blocks and
 	 * functors.
