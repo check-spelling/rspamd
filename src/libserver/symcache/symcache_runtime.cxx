@@ -387,7 +387,7 @@ auto symcache_runtime::process_filters(struct rspamd_task *task, symcache &cache
 {
 	auto all_done = true;
 	auto log_func = RSPAMD_LOG_FUNC;
-	auto has_passtrough = false;
+	auto has_passthrough = false;
 
 	for (const auto [idx, item]: rspamd::enumerate(order->d)) {
 		/* Exclude all non filters */
@@ -400,9 +400,9 @@ auto symcache_runtime::process_filters(struct rspamd_task *task, symcache &cache
 		}
 
 		if (!(item->flags & (SYMBOL_TYPE_FINE | SYMBOL_TYPE_IGNORE_PASSTHROUGH))) {
-			if (has_passtrough || check_metric_limit(task)) {
+			if (has_passthrough || check_metric_limit(task)) {
 				msg_debug_cache_task_lambda("task has already the result being set, ignore further checks");
-				has_passtrough = true;
+				has_passthrough = true;
 				/* Skip this item */
 				continue;
 			}
