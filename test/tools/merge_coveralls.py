@@ -136,7 +136,7 @@ if __name__ == '__main__':
             if os.getenv('DRONE_BUILD_EVENT') == 'pull_request':
                 j1['service_pull_request'] = os.getenv('DRONE_PULL_REQUEST')
             # git data can be filled by cpp-coveralls, but in our layout it can't find repo
-            # so we can override git info witout merging
+            # so we can override git info without merging
             j1['git'] = {
                 'head': {
                     'id': j1['commit_sha'],
