@@ -625,7 +625,7 @@ if settings.munging then
   local munging_defaults = {
     reply_goes_to_list = false,
     mitigate_allow_only = true, -- perform munging based on DMARC_POLICY_ALLOW only
-    mitigate_strict_only = false, -- perform mugning merely for reject/quarantine policies
+    mitigate_strict_only = false, -- perform munging merely for reject/quarantine policies
     munge_from = true, -- replace from with something like <orig name> via <rcpt user>
     list_map = nil, -- map of maillist domains
     munge_map_condition = nil, -- maps expression to enable munging
