@@ -354,7 +354,7 @@ lua_trie_match(lua_State *L)
 
 /***
  * @method trie:search_mime(task, cb)
- * This is a helper mehthod to search pattern within text parts of a message in rspamd task
+ * This is a helper method to search pattern within text parts of a message in rspamd task
  * @param {task} task object
  * @param {function} cb callback called on each pattern match @see trie:match
  * @param {boolean} caseless if `true` then match ignores symbols case (ASCII only)
@@ -392,7 +392,7 @@ lua_trie_search_mime(lua_State *L)
 
 /***
  * @method trie:search_rawmsg(task, cb[, caseless])
- * This is a helper mehthod to search pattern within the whole undecoded content of rspamd task
+ * This is a helper method to search pattern within the whole undecoded content of rspamd task
  * @param {task} task object
  * @param {function} cb callback called on each pattern match @see trie:match
  * @param {boolean} caseless if `true` then match ignores symbols case (ASCII only)
@@ -423,7 +423,7 @@ lua_trie_search_rawmsg(lua_State *L)
 
 /***
  * @method trie:search_rawbody(task, cb[, caseless])
- * This is a helper mehthod to search pattern within the whole undecoded content of task's body (not including headers)
+ * This is a helper method to search pattern within the whole undecoded content of task's body (not including headers)
  * @param {task} task object
  * @param {function} cb callback called on each pattern match @see trie:match
  * @param {boolean} caseless if `true` then match ignores symbols case (ASCII only)
