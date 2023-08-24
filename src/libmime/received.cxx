@@ -961,7 +961,7 @@ TEST_SUITE("received")
 				 {"from_hostname", "127.0.0.1"},
 				 {"by_hostname", "smtp.gmail.com"},
 			 }},
-			// Different real and hostanes
+			// Different real and hostnames
 			{"from 185.118.166.127 (steven2.zhou01.pserver.ru [185.118.166.127]) "
 			 "by mail.832zsu.cn (Postfix) with ESMTPA id AAD722133E34"sv,
 			 {

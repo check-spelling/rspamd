@@ -628,7 +628,7 @@ exports.table_cmp = table_cmp
 --]]
 local function table_merge(t1, t2)
   local res = {}
-  local nidx = 1 -- for numeric indicies
+  local nidx = 1 -- for numeric indices
   local it_func = function(k, v)
     if type(k) == 'number' then
       res[nidx] = v
@@ -1195,7 +1195,7 @@ end
 -- * <prefix>_privacy = false - subject privacy is off
 -- * <prefix>_privacy_alg = 'blake2' - default hash-algorithm to obfuscate subject
 -- * <prefix>_privacy_prefix = 'obf' - prefix to show it's obfuscated
--- * <prefix>_privacy_length = 16 - cut the length of the hash; if 0 or fasle full hash is returned
+-- * <prefix>_privacy_length = 16 - cut the length of the hash; if 0 or false full hash is returned
 -- @return obfuscated or validated subject
 --]]
 

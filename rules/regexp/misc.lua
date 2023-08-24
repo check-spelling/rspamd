@@ -101,7 +101,7 @@ reconf['LEAKED_PASSWORD_SCAM_RE'] = {
 
 rspamd_config:register_dependency('LEAKED_PASSWORD_SCAM', 'BITCOIN_ADDR')
 
--- Heurististic for detecting InterPlanetary File System (IPFS) gateway URLs:
+-- Heuristic for detecting InterPlanetary File System (IPFS) gateway URLs:
 -- These contain "ipfs" somewhere (either in the FQDN or the URL path) and a
 -- content identifier (CID), comprising of either "qm", followed by 44 alphanumerical
 -- characters (CIDv0), or a CIDv1 of an alphanumerical string of unspecified length,

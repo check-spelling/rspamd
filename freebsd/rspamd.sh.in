@@ -7,7 +7,7 @@
 # KEYWORD: shutdown
 
 #
-# Add the following line to /etc/rc.conf to enable countd:
+# Add the following line to /etc/rc.conf to enable rspamd:
 # rspamd (bool):          Set to "NO" by default.
 #                          Set it to "YES" to enable rspamd.
 

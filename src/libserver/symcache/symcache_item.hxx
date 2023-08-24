@@ -153,7 +153,7 @@ public:
 		virtual_children.push_back(ptr);
 	}
 
-	auto get_childen() const -> const std::vector<cache_item *> &
+	auto get_children() const -> const std::vector<cache_item *> &
 	{
 		return virtual_children;
 	}
@@ -488,7 +488,7 @@ public:
 		if (std::holds_alternative<normal_item>(specific)) {
 			const auto &filter_data = std::get<normal_item>(specific);
 
-			return std::cref(filter_data.get_childen());
+			return std::cref(filter_data.get_children());
 		}
 
 		return std::nullopt;

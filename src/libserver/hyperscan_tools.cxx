@@ -188,7 +188,7 @@ public:
 		}
 
 		if (access(mut_fname.c_str(), R_OK) == -1) {
-			msg_err_hyperscan("attempt to add non existing hyperscan file: %s, %s", mut_fname.c_str(),
+			msg_err_hyperscan("attempt to add nonexistent hyperscan file: %s, %s", mut_fname.c_str(),
 							  strerror(errno));
 			return;
 		}
@@ -234,7 +234,7 @@ public:
 			}
 		}
 		else {
-			msg_err_hyperscan("attempt to remove non-existent hyperscan file %s: %s",
+			msg_err_hyperscan("attempt to remove nonexistent hyperscan file %s: %s",
 							  mut_fname.c_str(), strerror(errno));
 		}
 

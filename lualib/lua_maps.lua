@@ -589,7 +589,7 @@ end
 local direct_map_schema = ts.shape { -- complex object
   name = ts.string:is_optional(),
   description = ts.string:is_optional(),
-  selector_alias = ts.string:is_optional(), -- an optional alias for the selectos framework
+  selector_alias = ts.string:is_optional(), -- an optional alias for the selector framework
   timeout = ts.number,
   data = ts.array_of(ts.string):is_optional(),
   -- Tableshape has no options support for something like key1 or key2?

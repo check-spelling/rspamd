@@ -1865,7 +1865,7 @@ rspamd_dkim_relaxed_body_step(struct rspamd_dkim_common_ctx *ctx, EVP_MD_CTX *ck
 	}
 
 	if (octets_remain < 0) {
-		/* Absurdic l tag value, but we still need to rewind the t pointer back */
+		/* Absurd l tag value, but we still need to rewind the t pointer back */
 		while (t > buf && octets_remain < 0) {
 			t--;
 			octets_remain++;

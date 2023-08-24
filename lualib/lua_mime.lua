@@ -711,7 +711,7 @@ exports.message_to_ucl_schema = function()
       size = ts.integer:describe('Size of the part'),
       type = ts.string:describe('Announced type'):is_optional(),
       detected_type = ts.string:describe('Detected type'):is_optional(),
-      boundary = ts.string:describe('Eclosing boundary'):is_optional(),
+      boundary = ts.string:describe('Enclosing boundary'):is_optional(),
       filename = ts.string:describe('File name for attachments'):is_optional(),
       headers = ts.array_of(headers_schema()):describe('Part headers'),
     }

@@ -101,7 +101,7 @@ local function check_ml_mailman(task)
     -- sends out of its own accord
     header = task:get_header('X-List-Administrivia')
     if header and header == 'yes' then
-      -- not much elase we can check, Subjects can be changed in settings
+      -- not much else we can check, Subjects can be changed in settings
       return true
     end
   else

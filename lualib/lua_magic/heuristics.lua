@@ -366,7 +366,7 @@ local function validate_csv(part, content, log_obj)
 
     if expected_commas and ncommas ~= expected_commas then
       -- Mismatched commas
-      lua_util.debugm(N, log_obj, "missmatched commas on line %s: %s != %s",
+      lua_util.debugm(N, log_obj, "mismatched commas on line %s: %s != %s",
           matched_lines, ncommas, expected_commas)
       return false
     elseif not expected_commas then

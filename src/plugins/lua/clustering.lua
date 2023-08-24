@@ -126,7 +126,7 @@ local update_cluster_id
 
 -- Callbacks and logic
 
-local function clusterting_filter_cb(task, rule)
+local function clustering_filter_cb(task, rule)
   local source_selector = rule.source_selector(task)
   local cluster_selector
 
@@ -187,7 +187,7 @@ local function clusterting_filter_cb(task, rule)
       { source_selector, cluster_selector })
 end
 
-local function clusterting_idempotent_cb(task, rule)
+local function clustering_idempotent_cb(task, rule)
   if task:has_flag('skip') then
     return
   end
@@ -304,13 +304,13 @@ if opts['rules'] then
       rspamd_config:register_symbol {
         name = rule.symbol,
         type = 'normal',
-        callback = callback_gen(clusterting_filter_cb, rule),
+        callback = callback_gen(clustering_filter_cb, rule),
       }
       rspamd_config:register_symbol {
         name = rule.symbol .. '_STORE',
         type = 'idempotent',
         flags = 'empty,explicit_disable,ignore_passthrough',
-        callback = callback_gen(clusterting_idempotent_cb, rule),
+        callback = callback_gen(clustering_idempotent_cb, rule),
         augmentations = { string.format("timeout=%f", redis_params.timeout or 0.0) }
       }
     end
