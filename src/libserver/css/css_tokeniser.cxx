@@ -392,7 +392,7 @@ css_tokeniser::consume_number() -> struct css_parser_token {
 						}
 					}
 					else {
-						/* We have no option but to uncosume ident token in this case */
+						/* We have no option but to unconsume ident token in this case */
 						msg_debug_css("got invalid ident like token after number, unconsume it");
 					}
 				}
