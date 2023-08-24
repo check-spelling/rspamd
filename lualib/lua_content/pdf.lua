@@ -396,8 +396,8 @@ local function maybe_apply_filter(dict, data, pdf, task)
       filt = { filt }
     end
 
-    if dict.DecodeParms then
-      local decode_params = maybe_dereference_object(dict.DecodeParms, pdf, task)
+    if dict.DecodeParams then
+      local decode_params = maybe_dereference_object(dict.DecodeParams, pdf, task)
 
       if type(decode_params) == 'table' then
         if decode_params.Predictor then
