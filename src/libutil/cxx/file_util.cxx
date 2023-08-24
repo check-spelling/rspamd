@@ -329,7 +329,7 @@ auto random_fname(std::string_view extension)
 
 	return out_fname;
 }
-TEST_SUITE("loked files utils")
+TEST_SUITE("locked files utils")
 {
 
 	TEST_CASE("create and delete file")
